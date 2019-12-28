@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Capabilities xmlns="http://www.opengis.net/wmts/1.0" xmlns:ows="http://www.opengis.net/ows/1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/wmts/1.0 http://schemas.opengis.net/wmts/1.0/wmtsGetCapabilities_response.xsd" version="1.0.0">
+    <ows:ServiceIdentification>
+        <ows:Title>SENTINEL_10M</ows:Title>
+        <ows:Keywords>
+            <ows:Keyword>gpsinfo</ows:Keyword>
+        </ows:Keywords>
+        <ows:ServiceType>OGC WMTS</ows:ServiceType>
+        <ows:ServiceTypeVersion>2.0</ows:ServiceTypeVersion>
+        <ows:Fees>none</ows:Fees>
+        <ows:AccessConstraints>https://creativecommons.org/licenses/by/4.0/</ows:AccessConstraints>
+    </ows:ServiceIdentification>
+    <ows:ServiceProvider>
+        <ows:ProviderName>Rechenraum GmbH</ows:ProviderName>
+        <ows:ProviderSite xlink:href="https://www.rechenraum.com"/>
+        <ows:ServiceContact>
+            <ows:ContactInfo>
+                <ows:Address>
+                    <ows:City>Vienna</ows:City>
+                    <ows:Country>Austria</ows:Country>
+                    <ows:ElectronicMailAddress>office@rechenraum.com</ows:ElectronicMailAddress>
+                </ows:Address>
+            </ows:ContactInfo>
+        </ows:ServiceContact>
+    </ows:ServiceProvider>
+    <Contents>
+        <Layer>
+            <ows:Title>SENTINEL_10M</ows:Title>
+            <ows:Abstract>Testservice DGM 0.5 m</ows:Abstract>
+            <ows:Identifier>SENTINEL_10M</ows:Identifier>
+            <Style isDefault="true"/>
+            <Format>application/zip</Format>
+            <TileMatrixSetLink>
+                <TileMatrixSet>SENTINEL_10M</TileMatrixSet>
+            </TileMatrixSetLink>
+            <ResourceURL format="application/zip" resourceType="tile" template="file://C:/Users/manfr/Desktop/TEST/SENTINEL_10M/{TileCol}/{TileRow}.asc.zip"/>
+        </Layer>
+        <TileMatrixSet>
+            <ows:Title>SENTINEL_10M</ows:Title>
+            <ows:Identifier>SENTINEL_10M</ows:Identifier>
+            <ows:SupportedCRS>urn:ogc:def:crs:EPSG::6312</ows:SupportedCRS>
+            <TileMatrix>
+                <ows:Identifier>0</ows:Identifier>
+                <ScaleDenominator>3.5714285714e+04</ScaleDenominator>
+                <TopLeftCorner>1.0688000000e+05 5.7046000000e+05</TopLeftCorner>
+                <TileWidth>100</TileWidth>
+                <TileHeight>100</TileHeight>
+                <MatrixWidth>579</MatrixWidth>
+                <MatrixHeight>296</MatrixHeight>
+            </TileMatrix>
+        </TileMatrixSet>
+    </Contents>
+    <ServiceMetadataURL xlink:href="file://C:/Users/manfr/Desktop/TEST"/>
+</Capabilities>
