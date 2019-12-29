@@ -1,4 +1,4 @@
-import gdal,sys
+import gdal
 import gpsinfo
 gpsinfo.Layer.allowUnsafeSSL(True)
 service = gpsinfo.Service('https://raw.githubusercontent.com/maegger/LANDCOVER_AT/master/gpsinfoWMTSCapabilities.xml')
