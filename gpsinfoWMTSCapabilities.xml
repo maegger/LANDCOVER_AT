@@ -33,7 +33,7 @@
             <TileMatrixSetLink>
                 <TileMatrixSet>SENTINEL_10M</TileMatrixSet>
             </TileMatrixSetLink>
-            <ResourceURL format="application/zip" resourceType="tile" template="https://raw.githubusercontent.com/maegger/LANDUSE_AT/master//SENTINEL_10M/{TileCol}/{TileRow}.asc.zip"/>
+            <ResourceURL format="application/zip" resourceType="tile" template="https://raw.githubusercontent.com/maegger/LANDCOVER_AT/master//SENTINEL_10M/{TileCol}/{TileRow}.asc.zip"/>
         </Layer>
         <TileMatrixSet>
             <ows:Title>SENTINEL_10M</ows:Title>
@@ -50,5 +50,5 @@
             </TileMatrix>
         </TileMatrixSet>
     </Contents>
-    <ServiceMetadataURL xlink:href="https://raw.githubusercontent.com/maegger/LANDUSE_AT"/>
+    <ServiceMetadataURL xlink:href="https://raw.githubusercontent.com/maegger/LANDCOVER_AT"/>
 </Capabilities>
